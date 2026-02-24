@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Applicants from "./pages/Applicants";
 import ApplicantProfile from "./pages/ApplicantProfile";
+import Pipeline from "./pages/Pipeline";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
@@ -27,11 +28,17 @@ const App = () => (
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route element={<ProtectedRoute><AppLayout /></ProtectedRoute>}>
+              <Route
+                element={
+                  <ProtectedRoute>
+                    <AppLayout />
+                  </ProtectedRoute>
+                }
+              >
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/applicants" element={<Applicants />} />
                 <Route path="/applicants/:id" element={<ApplicantProfile />} />
-                <Route path="/pipeline" element={<Applicants />} />
+                <Route path="/pipeline" element={<Pipeline />} />
                 <Route path="/settings" element={<Settings />} />
               </Route>
               <Route path="*" element={<NotFound />} />
