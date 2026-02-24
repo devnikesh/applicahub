@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 180 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 180 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 10% 15%;
+
+    --primary: 170 45% 32%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 170 20% 94%;
+    --secondary-foreground: 170 45% 25%;
+
+    --muted: 40 15% 95%;
+    --muted-foreground: 180 5% 45%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 38 95% 14%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 90%;
+    --input: 40 15% 88%;
+    --ring: 170 45% 32%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 170 30% 97%;
+    --sidebar-foreground: 180 10% 25%;
+    --sidebar-primary: 170 45% 32%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 170 25% 93%;
+    --sidebar-accent-foreground: 170 45% 25%;
+    --sidebar-border: 40 15% 90%;
+    --sidebar-ring: 170 45% 32%;
+
+    --success: 160 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 95% 14%;
+    --info: 200 80% 50%;
+    --info-foreground: 0 0% 100%;
+
+    --stage-inquiry: 200 80% 50%;
+    --stage-documents: 38 92% 50%;
+    --stage-submitted: 262 60% 55%;
+    --stage-offer: 170 45% 40%;
+    --stage-visa-applied: 200 60% 45%;
+    --stage-visa-granted: 160 60% 40%;
+    --stage-enrolled: 140 50% 35%;
+    --stage-rejected: 0 72% 51%;
+  }
+
+  .dark {
+    --background: 200 15% 8%;
+    --foreground: 40 15% 92%;
+
+    --card: 200 15% 11%;
+    --card-foreground: 40 15% 92%;
+
+    --popover: 200 15% 11%;
+    --popover-foreground: 40 15% 92%;
+
+    --primary: 170 45% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 15% 16%;
+    --secondary-foreground: 170 30% 80%;
+
+    --muted: 200 12% 16%;
+    --muted-foreground: 200 10% 55%;
+
+    --accent: 38 85% 55%;
+    --accent-foreground: 38 95% 10%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 12% 18%;
+    --input: 200 12% 20%;
+    --ring: 170 45% 45%;
+
+    --sidebar-background: 200 15% 10%;
+    --sidebar-foreground: 40 15% 85%;
+    --sidebar-primary: 170 45% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 12% 16%;
+    --sidebar-accent-foreground: 170 30% 80%;
+    --sidebar-border: 200 12% 18%;
+    --sidebar-ring: 170 45% 45%;
+
+    --success: 160 55% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 85% 55%;
+    --warning-foreground: 38 95% 10%;
+    --info: 200 75% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --stage-inquiry: 200 75% 55%;
+    --stage-documents: 38 85% 55%;
+    --stage-submitted: 262 55% 60%;
+    --stage-offer: 170 40% 48%;
+    --stage-visa-applied: 200 55% 50%;
+    --stage-visa-granted: 160 55% 45%;
+    --stage-enrolled: 140 45% 42%;
+    --stage-rejected: 0 62% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+}
