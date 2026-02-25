@@ -14,6 +14,7 @@ import ApplicantProfile from "./pages/ApplicantProfile";
 import Pipeline from "./pages/Pipeline";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
         </TooltipProvider>
       </AuthProvider>
     </ThemeProvider>
+    <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>
 );
 
